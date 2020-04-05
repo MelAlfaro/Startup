@@ -1,0 +1,51 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  /* las siguientes 5 lineas tienen la funcinon de adaptador la imagen de background al tamano del navegador y que siempre se vea centrado cubriendo todo el espacio*/
+  background: url(header.jpg) no-repeat center center fixed;
+  /* estas 3 lineas son lo mismo que la ultima linea del backgroun-size con la diferencia que son kits para los diferent browsers*/
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+}
+
+h1 {
+	font-size: 3rem;
+	color: #e2dbdb;
+}
+
+hr {
+	border-color: #F05F44;
+	border-width: 3px;
+	max-width: 65px;
+}
+
+.buffer {
+	height: 10rem;
+}
+
+.btn {
+	font-weight: 700;
+	/* define que tan gruesos o delgados son los caracteres en el texto mostrado, puede ser normal, bold o # */
+	border-radius: 300px;
+	/*border-radius para redondear las esquinas del borde en este caso del boton*/
+	text-transform: uppercase;
+}
+
+.btn-primary { /* esta es una clase de bootstrap, al crearla tambien aca, estamos construyendo sobre la misma */
+	background-color: #F05F44;
+	border-color: #F05F44;
+}
+
+.btn-primary:hover {
+	background-color: #ee4b08;
+	border-color: #ee4b08;
+	border-width: 4px;
+}
+
+.btn-xl {
+	padding: 1rem 2rem;
+}

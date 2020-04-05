@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Startup</title>
+
+    <!-- Required meta tags -->
+    <!-- una etiqueta que se recomiendo siempre agregar, funciona para adaptadar de mejor forma el contenido de la pagina a dispositivos moviles -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container d-flex h-100 align-items-center"> 
+      <!-- con la clase d-flex solamente estoy habilitando flexbox, esto me ayudar aca a alinear elementos verticalmente -->
+      <!-- align-items-center es quien de hecho se encarga de centrar los elementos verticalmente con respecto al contenedor -->
+      <!-- h-100 es una forma sencilla con bootstrap de hacer que el contenedor ocupe un 100% de la pagina, de forma que entonces la alineacion que se hacer con align-items-center funcione como se espera, centrando con respecto a la ventana -->
+      <div class="row">
+        <header class="text-center col-12">
+          <h1 class="text-uppercase"><strong>The biggest startup event of the year!</strong></h1>
+          <!-- claro que se puede transformar el texto a caps con un simple prop en CSS, pero esto es una demo de como se puede lograr esto por medio de bootstrap -->
+        </header>
+        <div class="buffer col-12"></div>
+        <!-- div creado con una clase que se estilizara solo para dar un espacio entre el header y demas contenido -->
+        <section class="text-center col-12">
+          <hr>
+          <a href="https://mailchi.mp/77ba19d93037/mel-test"><button class="btn btn-primary btn-xl">Find out more</button></a>
+          <!-- apunta a un form creado con mailchimp (marketing website) y publicado de forma gratuita -->
+        </section>
+      </div> 
+    </div>
+  </body>
+</html>
